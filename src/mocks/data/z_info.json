@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Paulo Kreft",
+		"image": {
+			"author": "Matheus Cenali",
+			"color": "#bb3335",
+			"url": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?fit=crop&q=60&auto=format"
+		},
+		"metadata": [
+			{ "name": "Vitamin A", "value": "3 μg" },
+			{ "name": "Vitamin B1", "value": "0.017 mg" },
+			{ "name": "Vitamin B2", "value": "0.026 mg" },
+			{ "name": "Vitamin B3", "value": "0.091 mg" },
+			{ "name": "Vitamin B5", "value": "0.061 mg" },
+			{ "name": "Vitamin B6", "value": "0.041 mg" },
+			{ "name": "Vitamin B9", "value": "3 μg" },
+			{ "name": "Vitamin C", "value": "4.6 mg" },
+			{ "name": "Vitamin E", "value": "0.18 mg" },
+			{ "name": "Vitamin K", "value": "2.2 μg" }
+		]
+	}
+]
