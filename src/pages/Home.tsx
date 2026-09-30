@@ -1,15 +1,18 @@
+import { Fireflies } from '@/components/Fireflies'
 import { Head } from '@/components/Head'
+import { Typewriter } from '@/components/Typewriter'
 
 const skills = [
 	'TypeScript',
 	'React',
 	'Node.js',
 	'Python',
+	'C#',
+	'.Net',
 	'Docker',
 	'PostgreSQL',
-	'AWS',
 	'CI/CD',
-	'Linux'
+	'DevSecOps'
 ]
 
 const socials = [
@@ -22,19 +25,15 @@ export function Home() {
 	return (
 		<>
 			<Head title='Paulo Kreft — SysAdmin e Software Developer' />
+			<Fireflies />
 			<main className='mx-auto flex min-h-screen max-w-3xl flex-col justify-center gap-16 px-6 py-20'>
 				<section className='flex flex-col gap-6'>
-					<span className='inline-flex w-fit items-center gap-2 rounded-full bg-purple-100 px-3 py-1 font-medium text-purple-700 text-sm dark:bg-purple-500/15 dark:text-purple-300'>
-						<span className='size-2 animate-pulse rounded-full bg-green-500' />
-						Disponível para novos projetos
-					</span>
-
 					<h1 className='font-bold text-4xl tracking-tight sm:text-6xl'>
 						Paulo Kreft
 					</h1>
 
-					<p className='text-lg text-purple-600 sm:text-xl dark:text-purple-400'>
-						Desenvolvedor de Software &amp; Profissional de TI
+					<p className='text-lg sm:text-xl' style={{color: '#00ff41'}}>
+						<Typewriter text='Software Developer & SysAdmin' speed={80} />
 					</p>
 
 					<p className='max-w-2xl text-base text-gray-600 leading-relaxed sm:text-lg dark:text-gray-300'>
@@ -48,7 +47,7 @@ export function Home() {
 							href='mailto:paulo.kreft@gmail.com'
 							className='rounded-lg bg-purple-600 px-5 py-2.5 font-medium text-white transition-colors hover:bg-purple-700'
 						>
-							Fale comigo
+							Fale comigo <span className='text-white/50'>/ Contact</span>
 						</a>
 						<a
 							href='https://github.com/z1nl0x'
@@ -56,14 +55,14 @@ export function Home() {
 							rel='noreferrer'
 							className='rounded-lg border border-gray-300 px-5 py-2.5 font-medium transition-colors hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700'
 						>
-							Ver projetos
+							Projetos <span className='text-gray-400 dark:text-gray-500'>/ Projects</span>
 						</a>
 					</div>
 				</section>
 
 				<section className='flex flex-col gap-4'>
 					<h2 className='font-semibold text-gray-500 text-sm uppercase tracking-wider dark:text-gray-400'>
-						Tecnologias
+						Tecnologias <span className='text-cyan-500 dark:text-cyan-400'>/ Stack</span>
 					</h2>
 					<ul className='flex flex-wrap gap-2'>
 						{skills.map(skill => (
@@ -79,7 +78,7 @@ export function Home() {
 
 				<section className='flex flex-col gap-4'>
 					<h2 className='font-semibold text-gray-500 text-sm uppercase tracking-wider dark:text-gray-400'>
-						Onde me encontrar
+						Onde me encontrar <span className='text-cyan-500 dark:text-cyan-400'>/ Where you can find me</span>
 					</h2>
 					<div className='flex flex-wrap gap-6'>
 						{socials.map(social => (
